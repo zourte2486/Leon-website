@@ -1,10 +1,95 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
+}
+
+/* <!-- Start of Header -->  */
+.header {
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(96, 141, 141);
+
+}
+.header .container .logo {
+    height: fit-content;
+    width: 180px;
+}
+.header .container .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+}
+
+.header .links .icon span{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 3px;
+    height: 3px;
+}
+
+.header .links .icon span:first-child{
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+
+.header .links .icon span:last-child{
+    width: 100%;
+}
+
+/* <!-- end of Header --> */
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .logo {
+        max-width: 70px;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .container {
+        width: 950px;
+    }
+    .logo {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1360px;
+    }
+
 }
