@@ -66,7 +66,7 @@ body {
     content: "";
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #f6f6f6 transparent;
+    border-color: transparent #908a8a ;
     position: absolute;
     right: 5px;
     top: -20px;
