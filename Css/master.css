@@ -1,6 +1,14 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+  /* End Variables */
 * {
     margin: 0;
     padding: 0;
@@ -87,7 +95,39 @@ body {
   .header .links ul li:not(:last-child) a {
     border-bottom: 1px solid #ddd;
   }
-/* <!-- end of Header --> */
+/* <!-- End of Header --> */
+
+/* <!-- Start of Landing  --> */
+.landing {
+    background-image: url(../images/686998.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+}
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+   
+}
+
+
+/* <!-- End of Landing  --> */
 
 @media (min-width: 768px) {
     .container {
