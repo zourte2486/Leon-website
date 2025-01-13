@@ -4,7 +4,7 @@
   --secondary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
-  --main-duration: 0.5s;
+  --main-duration: 0.3s;
 }
 
 /* End Variables */
@@ -340,7 +340,7 @@ body {
 
 .portfolio .portfolio-content .card:hover{
   transform: scale(1.05);
-  transition: 0.2s;
+  transition: var(--main-duration);
 }
 
 .portfolio .portfolio-content .card img {
@@ -400,7 +400,7 @@ body {
 
 .about .about-content .image img:hover {
   transform: scale(1.05);
-  transition: 0.2s;
+  transition: var(--main-duration);
 }
 
 @media (max-width: 991px) {
